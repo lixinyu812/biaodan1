@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        p {
+            margin-bottom: 15px;
+        }
+        
+        legend {
+            color: red;
+        }
+        
+        span {
+            color: red;
+        }
+        
+        input {
+            width: 300px;
+            height: 20px;
+            margin-bottom: 7px;
+            margin-top: 7px;
+        }
+    </style>
+    <title>表单</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <p style="font-size: 27px; font-weight:bolder;">学生信息</p>
+    <fieldset style="width: 315px;">
+        <legend>学生档案</legend>
+        <form id="testform" method="get" action="form.asp" style="color:black; font-size:13px;">
+            姓名：</br>
+            <input type="text" name="name" placeholder="请输入姓名" style="font-size: 12px;" /><span>&nbsp;*</span></br>
+            学号：</br>
+            <input type="number" name="no1" placeholder="请输入学号" style="font-size: 12px;" /><span>&nbsp;*</span></br>
+            手机号：</br>
+            <input type="number" name="no2" placeholder="请输入手机号" style="font-size: 12px;" /><span>&nbsp;*</span></br>
+            邮箱地址：</br>
+            <input type="email" name="email" placeholder="请输入邮箱地址" style="font-size: 12px;" /><span>&nbsp;*</span></br>
+            录取学校：</br>
+            <input type="search" name="school" form="test" /></br>
+            入学成绩：</br>
+            <input type="number" name="degree" form="test" /></br>
+            入学时间：</br>
+            <input type="date" name="date1" style="font-size: 12px;" />
+            <br/>
+            <input type="submit" value="提交" style="height:25px; background-color: rgb(221, 219, 219); font-size: 12px;" />
+        </form>
+    </fieldset>
+</body>
+
+</html>
